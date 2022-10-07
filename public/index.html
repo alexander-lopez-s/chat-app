@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat web application</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="title"><h1>WebChat APP - HYF - Cris</h1></div>
+    <div class="container">
+        <div class="chat-users">
+        <div><p>My chats</p></div>
+                <div class="dynamic-list"><ul id="private-chats"></ul></div>
+            </div> 
+        <div class="conversations">
+            <div class="chat-title" id="chat-title">
+                <h2 onclick="showIt()" id="chat-name">Tessa Baker</h2>
+                <img id="chat-avatar" src="angelina.jpg" width="120px" height="120px">
+            </div>
+            <div class="chat-text">
+               
+                <ul id="messages">
+                    <div id="ul"></div>
+                </ul>
+            </div>
+            <div class="chat-text-field">
+                <form>
+                    <input class="msg-text" type="text" id="message" name="message" value="Type your message...">
+                    <input class="msg-bttn" type="button" id="send-button" value="Send">
+                  </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="./chatUsers.js"></script>
+    <script src="./postMessages.js"></script>
+    <script src="./getMessages.js"></script>
+
+</body>
+</html>
+

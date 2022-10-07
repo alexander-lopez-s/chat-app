@@ -1,0 +1,66 @@
+/* Sign up form styling */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Slab', serif;
+    
+}
+
+.container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 830px;
+    border: 2px solid black;
+    margin: auto;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: white;
+    background-image: url("background.jpg");
+    background-size: auto;
+}
+
+h1 {
+    color: yellow;
+}
+
+input {
+    font-size: 25px;
+    border-radius: 7px;
+    width: 380px;
+    justify-content: space-around;
+    background-color: rgb(57, 202, 142);
+}
+
+.form-elements {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+
+
+p{
+    font-size: 30px;
+    color: rgb(115, 245, 9);
+    justify-content: left;
+}
+
+button {
+    font-size: 25px;
+    width: 100px;
+    background-color: #4CAF50; 
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 5px;
+}
+

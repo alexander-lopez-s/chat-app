@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "privatechats",
+  "info": {
+    "singularName": "privatechat",
+    "pluralName": "privatechats",
+    "displayName": "Privatechat",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "message": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::message.message",
+      "inversedBy": "privatechat"
+    },
+    "photo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up and Login page</title>
+    <link rel="stylesheet" href="form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <form>
+          <div class="container">
+            <h1>Chat live!</h1>
+          <img src="./chat.jpg" width="100px" height="100px">
+          <br>
+          <p>Create an account</p>
+          <br>
+          <div class = "form-elements">
+          <label for="username"><b>Username</b></label>
+          <input type="text" id="username" name="username" required>
+          <br>
+          <label for="email"><b>Email</b></label>
+          <input type="text" id="email" name="email" required>
+          <br>
+          <label for="psw"><b>Password</b></label>
+          <input type="password" id="password" name="password" autocomplete="on" required>
+          <br>
+          <button type="button" class="signupbtn" id="signupbtn">Sign Up</button> 
+          <p id="success"></p>
+          <div>
+            <br>
+          </form>
+            <p id="or">Or...</p>
+            <br>
+            <form>
+            <div class="log-in">
+            <label for="user-name"><b>Username</b></label><br>
+            <input type="text" id="user-name" name="user-name" required>
+            <br>
+            <br>
+            <label for="pass-word"><b>Password</b></label><br>
+            <input type="password" id="pass-word" name="pass-word" autocomplete="on" required>
+            <br>
+            <button type="button" id="logInUser">Log in</button>
+            </div>
+          </div>
+          </div>
+        </div>
+      </form>  
+      <script src="./signUp.js"></script>
+      <script src="./logIn.js"></script>
+</body>
+</html>
